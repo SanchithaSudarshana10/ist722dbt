@@ -14,6 +14,7 @@ with customers as (
 
 )
 
+
 with customers as (
 
     select
