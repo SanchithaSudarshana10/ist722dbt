@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: dim_product
+    description: One row per product; includes category and supplier FK
+    columns:
+      - name: productkey
+        description: Surrogate key of the product
+        tests: [not_null, unique]
+      - name: productid
+        description: Business key from RAW.NORTHWIND.PRODUCTS
+        tests: [not_null, unique]
+      - name: supplierkey
+        description: FK to dim_supplier

@@ -1,0 +1,6 @@
+version: 2
+
+models:
+  - name: obt_sales
+    description: >
+      Sales OBT – fact_sales joined to all relevant dimensions for easy BI consumption.

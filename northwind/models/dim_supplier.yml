@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: dim_supplier
+    description: One row per supplier
+    columns:
+      - name: supplierkey
+        description: Surrogate key of the supplier
+        tests: [not_null, unique]
+      - name: supplierid
+        description: Business key from RAW.NORTHWIND.SUPPLIERS
+        tests: [not_null, unique]
